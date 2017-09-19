@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+
+$brand-purple: rgb(135,140,223);
+$font-size: 2rem;
+$merriweather: "Merriweather";
+
+body {
+  height: 100vh;
+  background-color: $brand-purple;
+  font-size: $font-size;
+  font-family: $merriweather;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  border: solid black 1px;
+}
+
+.cols {
+  width: 100%;
+  float: left;
+  .col {
+    float: left;
+  }
+}

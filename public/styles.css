@@ -1,2 +1,12 @@
-body {
-  background-color: red; }
+@import url(https://fonts.googleapis.com/css?family=Merriweather);body {
+  height: 100vh;
+  background-color: #878cdf;
+  font-size: 2rem;
+  font-family: "Merriweather"; }
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid black 1px; }
