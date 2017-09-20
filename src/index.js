@@ -3,8 +3,15 @@ require("./assets/stylesheets/styles.scss");
 // Importing
 import webLogo from "images/web_logo";
 
-// Demonstration of new feature - class declaration
+
+/**
+ * Demonstration of new feature - class declaration
+ */
 class Demo {
+    /**
+     * Renders greetings text
+     * @returns {string} html code
+     */
     static renderIntro() {
         let html = "<ul><li>";
         html +=
@@ -32,4 +39,5 @@ class Demo {
 const img = document.createElement("img");
 img.src = `${webLogo}`;
 document.querySelector(".logo").appendChild(img);
-document.querySelector(".intro").innerHTML = (Demo.renderIntro());
+document.querySelector(".intro").innerHTML = Demo.renderIntro();
+
