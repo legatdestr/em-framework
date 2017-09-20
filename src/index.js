@@ -1,33 +1,35 @@
-require('./assets/stylesheets/styles.scss');
+require("./assets/stylesheets/styles.scss");
 
-import web_logo from 'images/web_logo';
+// Importing
+import webLogo from "images/web_logo";
 
-// demonstration of new feature - class declaration
+// Demonstration of new feature - class declaration
 class Demo {
-    renderIntro() {
-        const introList = [
-            'Webpack + Webpack Dev Server',
-            'ES2015/ES6 support with Babel loader (class, import)',
-            'SCSS to CSS compilation',
-            'CSS and JS minification',
-            'CSS autoprefixer',
-            'Images loader and minification',
-            'Shortcut to  paths (aliases)',
-            'UglifyJS',
-            'Image Webpack Loader',
-            'Hot-module-reloading support for styles',
+    static renderIntro() {
+        let html = "<ul><li>";
+        html +=
+            [
+                "Webpack + Webpack Dev Server",
+                "ES2015/ES6 support with Babel loader (class, import)",
+                "SCSS to CSS compilation",
+                "CSS and JS minification",
+                "CSS autoprefixer",
+                "Images loader and minification",
+                "Shortcut to  paths (aliases)",
+                "UglifyJS",
+                "Image Webpack Loader",
+                "Hot-module-reloading support for styles",
+                "Automatic code analyzing with ESLint"
+            ].join("</li><li>");
 
-        ];
-        const html = '<ul><li>' + introList.join('</li><li>') + '</li></ul>';
+        html += "</li></ul>";
+
         return html;
     }
 }
 
 
-let img = document.createElement('img');
-img.src = `${web_logo}`;
-document.querySelector('.logo').appendChild(img);
-
-const demo = new Demo();
-
-document.querySelector('.intro').innerHTML = (new Demo()).renderIntro();
+const img = document.createElement("img");
+img.src = `${webLogo}`;
+document.querySelector(".logo").appendChild(img);
+document.querySelector(".intro").innerHTML = (Demo.renderIntro());

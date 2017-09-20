@@ -20,6 +20,12 @@ let config = {
     module: {
         rules: [
             {
+                enforce: "pre",
+                test: /\.js$/, // files ending with .js
+                exclude: /node_modules/,
+                loader: "eslint-loader"
+            },
+            {
                 test: /\.js$/, // files ending with .js
                 exclude: [/node_modules/, /docker/], // exclude the node_modules directory
                 loader: "babel-loader" // use this (babel-core) loader
