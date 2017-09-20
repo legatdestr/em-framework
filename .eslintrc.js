@@ -42,7 +42,6 @@ module.exports = {
         "no-useless-concat": "error",
         "prefer-const": "error",
         "no-magic-numbers": "error",
-        "no-self-compare": "error",
         "no-self-compare": "error"
     }
 };

@@ -22,7 +22,7 @@ let config = {
             {
                 enforce: "pre",
                 test: /\.js$/, // files ending with .js
-                exclude: /node_modules/,
+                exclude: [/node_modules/, /docker/],
                 loader: "eslint-loader"
             },
             {
@@ -59,15 +59,15 @@ let config = {
                         }
                     }
                 ],
-                exclude: /node_modules/,
+                exclude: [/node_modules/, /docker/],
                 include: __dirname,
             }
         ]
     },
 
     plugins: [
-        new ExtractTextWebpackPlugin('styles.css')
-        //  new webpack.optimize.UglifyJsPlugin() // call the uglify plugin
+        new ExtractTextWebpackPlugin('styles.css'),
+        new webpack.optimize.UglifyJsPlugin() // call the uglify plugin
     ],
 
     devServer: {
