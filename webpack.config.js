@@ -67,7 +67,7 @@ let config = {
 
     plugins: [
         new ExtractTextWebpackPlugin('styles.css'),
-        new webpack.optimize.UglifyJsPlugin() // call the uglify plugin
+        //new webpack.optimize.UglifyJsPlugin() // call the uglify plugin
     ],
 
     devServer: {
