@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+## EM-Frontend Skeleton
 
-You can use the [editor on GitHub](https://github.com/legatdestr/em-framework/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+EM Frontend Skeleton is a scaffold for modern frontend applications (e.g. Single Page Applications) that allows developers to make an easy start. 
+It reduces the amount of time they spend creating project environment and infrastructure. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### See below the main preconfigured features:
 
-### Markdown
+- Webpack, Webpack Dev Server
+- ES2015/ES6 support with Babel loader 
+- SCSS to CSS compilation
+- CSS and JS minification (with UglifyJS)
+- CSS autoprefixer
+- Images loader and compression
+- Hot module reloading support for styles
+- ESLint automatic code analyzing
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/legatdestr/em-framework/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### MIT License, 2017
