@@ -13,5 +13,22 @@ It reduces the amount of time they spend creating project environment and infras
 - Images loader and compression
 - Hot module reloading support for styles
 - ESLint automatic code analyzing
+- Docker 
+
+### Get started
+
+- setup docker
+- clone this project: `git clone https://github.com/legatdestr/em-frontend-skeleton.git` skeleton
+- `cd skeleton`
+- `cd docker`
+- `./start.sh`
+- `npm install (docker container console)`
+- `npm run start`
+
+### Available commands
+
+- `npm run start`
+- `npm run production`
+- `npm run build`
 
 ### MIT License, 2017
