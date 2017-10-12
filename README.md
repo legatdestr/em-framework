@@ -30,5 +30,6 @@ It reduces the amount of time they spend creating project environment and infras
 - `npm run start`
 - `npm run production`
 - `npm run build`
+- `npm run test` - testing with karma and jasmine 
 
 ### MIT License, 2017
