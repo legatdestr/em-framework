@@ -1,43 +1,20 @@
-require("./assets/stylesheets/styles.scss");
+'use strict';
 
-// Importing
-import webLogo from "images/web_logo";
+require('./assets/stylesheets/styles.scss');
 
+window.calculator = window.calculator || {};
 
-/**
- * Demonstration of new feature - class declaration
- */
-class Demo {
-    /**
-     * Renders greetings text
-     * @returns {string} html code
-     */
-    static renderIntro() {
-        let html = "<ul><li>";
-        html +=
-            [
-                "Webpack + Webpack Dev Server",
-                "ES2015/ES6 support with Babel loader (class, import)",
-                "SCSS to CSS compilation",
-                "CSS and JS minification",
-                "CSS autoprefixer",
-                "Images loader and minification",
-                "Shortcut to  paths (aliases)",
-                "UglifyJS",
-                "Image Webpack Loader",
-                "Hot-module-reloading support for styles",
-                "Automatic code analyzing with ESLint"
-            ].join("</li><li>");
+(function(global) {
+    var
+        getIntById = function(id) {
+            return parseInt(document.getElementById(id).value, 10);
+        },
+        calculate = function() {
+            var sum = getIntById('x') + getIntById('y');
+            document.getElementById('result').innerHTML = isNaN(sum) ? 0 : sum;
+        };
 
-        html += "</li></ul>";
-
-        return html;
-    }
-}
-
-
-const img = document.createElement("img");
-img.src = `${webLogo}`;
-document.querySelector(".logo").appendChild(img);
-document.querySelector(".intro").innerHTML = Demo.renderIntro();
-
+    global.calculator.init = function() {
+        document.getElementById('add').addEventListener('click', calculate);
+    };
+})(window);

@@ -119,6 +119,5 @@ module.exports = {
         "no-undef-init": "error",
         "no-use-before-define": "error",
         "prefer-spread": "error",
-
     }
 };

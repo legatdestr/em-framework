@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --progress",
     "start": "webpack --progress && webpack-dev-server -d --hot --config webpack.config.js --host 0.0.0.0 --watch --progress",
-    "production": "NODE_ENV=production webpack --progress"
+    "production": "NODE_ENV=production webpack --progress",
+    "test": "karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
@@ -48,5 +49,12 @@
     "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2"
+  },
+  "dependencies": {
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-webpack": "^2.0.5"
   }
 }

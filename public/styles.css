@@ -10,3 +10,9 @@
   display: -ms-flexbox;
   display: flex;
   border: solid black 1px; }
+
+.cols {
+  width: 100%;
+  float: left; }
+  .cols .col {
+    float: left; }
