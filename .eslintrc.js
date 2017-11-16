@@ -17,7 +17,7 @@ module.exports = {
     },
     "globals": {},
     "rules": {
-        "quotes": ["error", "double"],
+        "quotes": ["error", "single"],
         "indent": ["error", 4],
         "linebreak-style": ["error", "unix"],
         "semi": ["error", "always"],
@@ -26,13 +26,6 @@ module.exports = {
         "no-alert": "error",
         "curly": "error",
         "camelcase": "error",
-        "capitalized-comments": [
-            "error",
-            "always",
-            {
-                "ignoreInlineComments": true
-            }
-        ],
         "eqeqeq": "error",
         "no-eq-null": "error",
         "class-methods-use-this": "error",
@@ -49,8 +42,8 @@ module.exports = {
         "no-template-curly-in-string": "error",
         "require-jsdoc": ["error", {
             "require": {
-                "FunctionDeclaration": true,
-                "MethodDefinition": true,
+                "FunctionDeclaration": false,
+                "MethodDefinition": false,
                 "ClassDeclaration": true,
                 "ArrowFunctionExpression": false
             }
@@ -79,7 +72,7 @@ module.exports = {
         ],
         "array-callback-return": "error",
         "block-scoped-var": "error",
-        "complexity": ["error", 2],
+        "complexity": ["warn", 4],
         "consistent-return": ["error", {"treatUndefinedAsUnspecified": true}],
         "default-case": "error",
         "dot-location": ["error", "property"],

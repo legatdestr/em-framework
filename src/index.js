@@ -10,8 +10,9 @@ window.calculator = window.calculator || {};
             return parseInt(document.getElementById(id).value, 10);
         },
         calculate = function() {
-            var sum = getIntById('x') + getIntById('y');
-            document.getElementById('result').innerHTML = isNaN(sum) ? 0 : sum;
+            var sum = getIntById('x') + getIntById('y'),
+                defaultSum = 0;
+            document.getElementById('result').innerHTML = isNaN(sum) ? defaultSum : sum;
         };
 
     global.calculator.init = function() {
